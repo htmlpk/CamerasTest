@@ -12,6 +12,6 @@ ng serve
 
 # Credos
 
-ffv438@gmail.com
+login : ffv438@gmail.com
 
-test123
+password : test123
