@@ -1,0 +1,36 @@
+{
+    "text":{
+        "greetings":"Hello, ",
+        "changeLanguage":"You can change language"
+    },
+    "auth": {
+        "login": "Login",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword":"Confirm password"
+    },
+    "buttons":{
+        "submitt":"Submitt",
+        "login":"Login",
+        "register":"Register",
+        "cameras":"Cameras",
+        "reports":"Reports",
+        "settings":"Settings",
+        "logOut":"Log out"
+    },
+    "plaseHolder":{
+        "typeUserName":"type your username",
+        "typePassword":"type yourd password",
+        "confirmPassword":"confirm your password"
+    },
+    "validation":{
+        "mustMatch":"Must match with the password",
+        "requiredField":"Field is required",
+        "minimum6Characters":"6 characters minimum",
+        "fieldIsInvalid":"Field is invalid"
+    },
+    "camera":{
+        "passed":"Passed",
+        "notPassed":"Not passed"
+    }
+}

@@ -1,0 +1,29 @@
+<main class="box">
+  <h2>{{ 'auth.login' | translate }}</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="inputBox">
+      <label for="userName">{{ 'auth.login' | translate }}</label>
+      <input type="text" name="userName" id="userName" placeholder="{{ 'plaseHolder.typeUserName' | translate }}" required
+        formControlName="email" />
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">{{ 'validation.requiredField' | translate }}</div>
+        <div *ngIf="f.email.errors.email">{{ 'validation.fieldIsInvalid' | translate }}</div>
+      </div>
+    </div>
+    <div class="inputBox">
+      <label for="userPassword">{{ 'auth.password' | translate }}</label>
+      <input type="password" name="userPassword" id="userPassword" placeholder="{{ 'plaseHolder.typePassword' | translate }}" required
+        formControlName="password" />
+      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors?.required">{{ 'validation.requiredField' | translate }}</div>
+        <div *ngIf="f.password.errors?.minlength">{{ 'validation.minimum6Characters' | translate }}</div>
+      </div>
+    </div>
+    <div>
+      <button type="submit" name="" style="float: left;">{{ 'buttons.submitt' | translate }}</button>
+      <a class="button" [routerLink]="'/auth/register'" style="float: left;">{{ 'buttons.register' | translate }}</a>
+    </div>
+  </form>
+</main>
+<footer>
+</footer>

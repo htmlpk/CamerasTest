@@ -1,0 +1,16 @@
+<div class="content">
+  <div class="camera"
+    [ngClass]="{'success': camera.status == cameraStatus.Success, 'failed': camera.status == cameraStatus.Failed}">
+    
+    <div class="camera-header">
+      <div>{{camera.name}}</div>
+
+      <div class="status-field" *ngIf="camera.status == cameraStatus.Success"><img src="../../../assets/icons/greeen-indicator.png" alt="">{{ 'camera.passed' | translate }}</div>
+      <div class="status-field" *ngIf="camera.status == cameraStatus.Failed"><img src="../../../assets/icons/red-indicator.png" alt="">{{ 'camera.notPassed' | translate }}</div>
+    </div>
+   
+    <div class="camera-image-container">
+      <img [src]=camera.url alt={{camera.name}}>
+    </div>
+  </div>
+</div>

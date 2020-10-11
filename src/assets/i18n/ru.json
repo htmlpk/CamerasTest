@@ -1,0 +1,37 @@
+{
+    "text":{
+        "greetings":"Добро пожаловать, ",
+        "changeLanguage":"Вы можете изменить язык"
+    },
+    "auth": {
+        "login": "Логин",
+        "email": "Почта",
+        "password": "Пароль",
+        "confirmPassword":"Пароль повторно"
+    },
+    "buttons":{
+        "submitt":"Ок",
+        "login":"Логин",
+        "register":"Зарегистрировать",
+        "cameras":"Камеры",
+        "reports":"Отчеты",
+        "settings":"Настройки",
+        "logOut":"Выйти"
+    },
+    "plaseHolder":{
+        "typeUserName":"введите свой логин",
+        "typePassword":"введите свой пароль",
+        "confirmPassword":"подтвердите свой пароль"
+    },
+    "validation":{
+        "mustMatch":"Должно совпадать с паролем",
+        "requiredField":"Поле обязательно",
+        "minimum6Characters":"Минимум 6 символов",
+        "fieldIsInvalid":"Поле не валидно"
+    },
+    "camera":{
+        "passed":"Пройдено",
+        "notPassed":"Не пройдено"
+    }
+    
+}

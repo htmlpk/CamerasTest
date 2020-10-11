@@ -1,0 +1,35 @@
+<main class="box">
+  <h2>{{ 'buttons.register' | translate }}</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="inputBox">
+      <label for="userName">{{ 'auth.email' | translate }}</label>
+      <input type="text" name="userName" id="userName" placeholder="{{ 'plaseHolder.typeUserName' | translate }}" formControlName="email" />
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">{{ 'validation.requiredField' | translate }}</div>
+        <div *ngIf="f.email.errors.email">{{ 'validation.requiredField' | translate }}</div>
+      </div>
+    </div>
+    <div class="inputBox">
+      <label for="userPassword">{{ 'auth.password' | translate }}</label>
+      <input type="password" name="userPassword" id="userPassword" placeholder="{{ 'plaseHolder.typePassword' | translate }}" required
+        formControlName="password" />
+      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">{{ 'validation.requiredField' | translate }}</div>
+        <div *ngIf="f.password.errors.minlength">{{ 'validation.minimum6Characters' | translate }}</div>
+      </div>
+    </div>
+    <div class="inputBox">
+      <label for="userConfirmPassword">{{ 'auth.confirmPassword' | translate }}</label>
+      <input type="password" name="userPassword" id="userConfirmPassword" placeholder="{{ 'plaseHolder.confirmPassword' | translate }}" required
+        formControlName="confirmPassword" />
+      <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+        <div *ngIf="f.confirmPassword.errors.required">{{ 'validation.requiredField' | translate }}</div>
+        <div *ngIf="f.confirmPassword.errors.mustMatch">{{ 'validation.mustMatch' | translate }}</div>
+      </div>
+    </div>
+    <button name="" style="float: left;" type="submit" [disabled]="!registerForm.valid">{{ 'buttons.submitt' | translate }}</button>
+    <a class="button" [routerLink]="'/auth/login'" style="float: left;">{{ 'auth.login' | translate }}</a>
+  </form>
+</main>
+<footer>
+</footer>

@@ -1,0 +1,8 @@
+
+<div>
+    <label for="language">{{ 'text.changeLanguage' | translate }}</label>
+    <select name="" id="language" (change)="useLanguage($event.target.value)">
+        <option value="en" >English</option>
+        <option value="ru" >Русский</option>
+    </select>
+</div>

@@ -1,0 +1,14 @@
+<div *ngIf="userService.User" class="logged-in-heder">
+  <div class="logo">
+    <img  src="../../../../assets/images/logo.jpg" alt="">
+  </div>
+  <div class="header-buttons">
+    <button [routerLink]="'/cameras'">{{ 'buttons.cameras' | translate }}</button>
+    <button>{{ 'buttons.reports' | translate }}</button>
+    <button [routerLink]="'/profile'">{{ 'buttons.settings' | translate }}</button>
+  </div>
+  <div class="user-buttons">
+    <span>{{ 'text.greetings' | translate }} {{userService.User.name}} </span>
+    <button (click)="logOut()">{{ 'buttons.logOut' | translate }}</button>
+  </div>
+</div>
