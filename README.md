@@ -1,6 +1,11 @@
 # CamerasTest
+
 Created by Trusevich Artem
+
 # Preparing 
-## npm install
+
+npm install
+
 # launch
-## ng serve
+
+ng serve
