@@ -13,7 +13,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.userService.User;
-    debugger
   }
 
   public logOut() {
